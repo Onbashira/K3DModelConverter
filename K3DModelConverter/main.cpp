@@ -2,7 +2,6 @@
 #include <stdio.h>  /* printf */
 #include <stdlib.h>  /* system */
 
-#pragma
 
 int main(int argc,char *argv[]) {
 

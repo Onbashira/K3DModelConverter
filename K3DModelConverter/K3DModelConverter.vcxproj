@@ -75,16 +75,16 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)\Engine\Lib\FBXSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\Engine\Lib\FBXSDK\lib\vs2015\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\lib\vs2015\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)\Engine\Lib\FBXSDK\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\Engine\Lib\FBXSDK\lib\vs2015\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\lib\vs2015\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -104,13 +104,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\Lib\FBXSDK\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\include;</AdditionalIncludeDirectories>
       <AdditionalOptions>-std:c++17 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)\Engine\Lib\FBXSDK\lib\vs2015\x64\debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\lib\vs2015\x64\debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>libfbxsdk.lib;libfbxsdk-mt.lib;libfbxsdk-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -138,7 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Engine\Lib\FBXSDK\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)K3DModelConverter\Engine\Lib\FBXSDK\include;</AdditionalIncludeDirectories>
       <AdditionalOptions>-std:c++17 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
