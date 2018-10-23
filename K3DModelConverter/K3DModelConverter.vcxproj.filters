@@ -13,5 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\Fbx">
+      <UniqueIdentifier>{b23a2d0d-fb7b-459d-8e07-9a712306abfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Model">
+      <UniqueIdentifier>{e20cd7e4-e33e-40bf-a369-5073aba563f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Converter">
+      <UniqueIdentifier>{b372f9e8-e52f-4484-8978-5fcc496098a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
