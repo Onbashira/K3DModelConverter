@@ -22,10 +22,123 @@
     <Filter Include="ソース ファイル\Converter">
       <UniqueIdentifier>{b372f9e8-e52f-4484-8978-5fcc496098a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Model\FBX">
+      <UniqueIdentifier>{842cd425-eefd-477f-9692-dd97e1dc940b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Model\PMX">
+      <UniqueIdentifier>{0f4fa115-40c1-48c5-a41a-a52b370b5a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Model\PMD">
+      <UniqueIdentifier>{703884cc-d154-48d2-8871-4d981804df0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Util">
+      <UniqueIdentifier>{a637e26a-5652-4088-ac3b-338e4865ac78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Util\Logger.cpp">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\ManagerComponentBase.cpp">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\Math.cpp">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Util\NonCopyable.cpp">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\PMD\PMDLoader.cpp">
+      <Filter>ソース ファイル\Model\PMD</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\PMD\PMDModel.cpp">
+      <Filter>ソース ファイル\Model\PMD</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\PMX\PMXLoader.cpp">
+      <Filter>ソース ファイル\Model\PMX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\PMX\PMXModel.cpp">
+      <Filter>ソース ファイル\Model\PMX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\IModelLoader.cpp">
+      <Filter>ソース ファイル\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\IModel.cpp">
+      <Filter>ソース ファイル\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FbxLayerAnalizer.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FBXLoader.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FbxMaterialAnalizer.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FbxMeshAnalizer.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FbxNodeAnalizer.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Model\FBX\FbxUVAnalizer.cpp">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Util\Logger.h">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\ManagerComponentBase.h">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\Math.h">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\NonCopyable.h">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Util\Utility.h">
+      <Filter>ソース ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\PMD\PMDLoader.h">
+      <Filter>ソース ファイル\Model\PMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\PMD\PMDModel.h">
+      <Filter>ソース ファイル\Model\PMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\PMX\PMXLoader.h">
+      <Filter>ソース ファイル\Model\PMX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\PMX\PMXModel.h">
+      <Filter>ソース ファイル\Model\PMX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\IModelLoader.h">
+      <Filter>ソース ファイル\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\IModel.h">
+      <Filter>ソース ファイル\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FbxLayerAnalizer.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FBXLoader.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FbxMaterialAnalizer.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FbxMeshAnalizer.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FbxNodeAnalizer.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Model\FBX\FbxUVAnalizer.h">
+      <Filter>ソース ファイル\Model\FBX</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
