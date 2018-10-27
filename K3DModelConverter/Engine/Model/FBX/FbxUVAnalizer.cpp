@@ -2,6 +2,10 @@
 
 
 
+void FbxUVAnalizer::SetPropertyUV(FbxLayerElementUV * elem, UVInfo & uvinfo)
+{
+}
+
 FbxUVAnalizer::FbxUVAnalizer()
 {
 }

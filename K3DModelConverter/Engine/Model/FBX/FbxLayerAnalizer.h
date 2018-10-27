@@ -1,6 +1,8 @@
 #pragma once
 #include <fbxsdk.h>
 #include <string>
+
+//レイヤ解析クラス
 class FbxLayerAnalizer
 {
 private:
@@ -26,11 +28,43 @@ public:
 	};
 private:
 
+protected:
+
+	// テクスチャ名
+	union {
+		const char* textureNameAry[24];
+		struct _textureName {
+			const char* ambientFactor;
+			const char* ambient;
+			const char* bump;
+			const char* diffuseFactor;
+			const char* diffuse;
+			const char* emissiveFactor;
+			const char* emissive;
+			const char* normalMap;
+			const char* reflectionFactor;
+			const char* reflection;
+			const char* shininess;
+			const char* specularFactor;
+			const char* specular;
+			const char* transparencyFactor;
+			const char* transparency;
+		} textureName;
+	};
+
+	const char* materialName;		//! マテリアル名
+
 public:
 
 	virtual bool Analize(fbxsdk::FbxLayer* layer, fbxsdk::FbxNode* node);
 
-	std::string GetTextureLavel(int index);
+	std::string GetTextureLabel(int index);
+
+	std::string GetTextureLabel(TEXTURE_TYPES type);
+
+	std::string GetTextureName(int index);
+
+	std::string GetTextureName(TEXTURE_TYPES type);
 
 	FbxLayerAnalizer();
 	virtual ~FbxLayerAnalizer();
