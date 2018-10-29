@@ -1,4 +1,5 @@
 #pragma once
+#include <fbxsdk.h>
 #include <vector>
 #include <string>
 
@@ -8,7 +9,7 @@
 
 struct UVInfo {
 	std::string _uvSetName;
-	std::vector<Vector2> _uv;
+	std::vector<std::vector<Vector2>> _uv;
 
 };
 
@@ -19,8 +20,9 @@ private:
 	UVInfo _meshUV;
 	UVInfo _diffuseUV;
 	UVInfo _specularUV;
+	UVInfo _emissiveUV;
+	UVInfo _ambientUV;
 	UVInfo _bumpUV;
-	UVInfo _emmisiveUV;
 	UVInfo _normalMapUV;
 
 protected:
@@ -30,7 +32,7 @@ public:
 private:
 
 protected:
-	void SetPropertyUV(FbxLayerElementUV* elem, UVInfo& uvinfo);
+	bool SetPropertyUV(FbxLayerElementUV* elem, UVInfo& uvinfo);
 public:
 	FbxUVAnalizer();
 
@@ -42,6 +44,7 @@ public:
 
 	unsigned int GetUVsNum();
 
+	UVInfo& GetMeshUV();
 	
 };
 

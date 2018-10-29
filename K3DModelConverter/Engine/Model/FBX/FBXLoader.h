@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "FbxNodeAnalizer.h"
 class FBXLoader
 {
 private:
@@ -19,6 +20,7 @@ private:
 	//void IndexFix();
 	//void TextureFix();
 	//void SkeltonFix();
+	FbxNodeAnalizer _analizer;
 public:
 	static FBXLoader& GetInstance() {
 		static FBXLoader instance;

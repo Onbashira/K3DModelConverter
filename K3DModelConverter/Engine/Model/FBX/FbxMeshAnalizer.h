@@ -18,13 +18,17 @@ protected:
 
 	unsigned int										_polygonVertexNum;
 
-	std::vector<int>									_indexAry;
+	std::vector<unsigned int>							_indexAry;
 
 	unsigned int										_layerNum;
 
 	unsigned int										_controlPointNum;
-
+	
 	std::vector<Vector4>								_controlPointAry;
+
+	unsigned int										_vertexNum;
+
+	std::vector<Vector3>								_vetexAry;
 
 	unsigned int										_normalNum;
 
@@ -34,9 +38,11 @@ protected:
 
 	FbxMesh*											_mesh;
 
-	std::string											_materialNum;
+	unsigned int										_materialNum;
 
 	std::vector<std::shared_ptr<FbxMaterialAnalizer>>	_material;
+
+	unsigned int										_uvNum;
 
 	std::vector<std::shared_ptr<FbxUVAnalizer>>			_uv;
 
@@ -79,6 +85,12 @@ public:
 
 	std::vector<Vector4>& GetControlPointVector();
 
+	unsigned int GetVertexNum();
+
+	Vector3* GetVertexArray();
+
+	std::vector<Vector3>& GetVertexVector();
+
 	unsigned int GetNormalNum();
 
 	Vector3* GetNormalArray();
@@ -89,7 +101,7 @@ public:
 
 	std::shared_ptr<FbxMaterialAnalizer> GetMaterial(int index);
 
-	unsigned int GetUVNum();
+	unsigned int GetUVNum(unsigned int index);
 
 	std::shared_ptr<FbxUVAnalizer> GetUV(int index);
 

@@ -120,52 +120,52 @@ bool FbxNodeAnalizer::NodeDistributer(FbxNode * node)
 
 bool FbxNodeAnalizer::PreAnalize(FbxScene * scene)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::PostAnalize(FbxScene * scene)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::PreAnalizeChildren(FbxNode * node)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::PostAnalizeChildren(FbxNode * node)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::CatchErr(FbxNode * errNode)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::RootNode(FbxNode * root)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::UnidentifiedNode(FbxNode * node)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::NullNode(FbxNode * node, FbxNull * null)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::MarkerNode(FbxNode * node, FbxMarker * marker)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::SkeletonNode(FbxNode * node, FbxSkeleton * skelton)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::MeshNode(FbxNode * node, FbxMesh * mesh)
@@ -209,7 +209,7 @@ bool FbxNodeAnalizer::MeshNode(FbxNode * node, FbxMesh * mesh)
 
 	{
 		ss << "UV” : ";
-		ss << analizer->GetUVNum();
+		ss << analizer->GetUVNum(0);
 		K3D12::SystemLogger::GetInstance().Log(K3D12::LogLevel::Info, ss.str());
 		ss.str("");
 	}
@@ -221,72 +221,72 @@ bool FbxNodeAnalizer::MeshNode(FbxNode * node, FbxMesh * mesh)
 		ss.str("");
 	}
 
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::NURBNode(FbxNode * node, FbxNurbs * nurb)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::PatchNode(FbxNode * node, FbxPatch * nurb)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::CameraNode(FbxNode * node, FbxCamera * nurb)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::CameraSwitcherNode(FbxNode * node, FbxCameraSwitcher * nurb)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::LightNode(FbxNode * node, FbxLight * light)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::OpticaReferenceNode(FbxNode * node, FbxOpticalReference * optRef)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::OpticalMakerNode(FbxNode * node)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::ConstraintNode(FbxNode * node)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::NurbCurveNode(FbxNode * node, FbxNurbsCurve * nurbsCurve)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::TrimNurbSurfaceNode(FbxNode * node, FbxTrimNurbsSurface * trimNurbSurface)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::NurbSurfaceNode(FbxNode * node, FbxNurbsSurface * nurbSurface)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::BoundaryNode(FbxNode * node, FbxBoundary * boundary)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::ShapeNode(FbxNode * node, FbxShape * shape)
 {
-	return false;
+	return true;
 }
 
 bool FbxNodeAnalizer::Analize(FbxScene * scene)
